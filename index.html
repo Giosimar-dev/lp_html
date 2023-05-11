@@ -22,6 +22,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@editorjs/marker@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/@editorjs/underline@latest"></script>
 <script src="js/editor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
+<script>
+if (window.devtools.isOpen === true) {
+      window.location = "https://blackcodes.pro/";
+    }
+  	window.addEventListener('devtoolschange', event => {
+      if (event.detail.isOpen === true) {
+        window.location = "https://blackcodes.pro/";
+      }
+  	});
+</script>
 </head>
 <body>
 
